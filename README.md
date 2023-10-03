@@ -1,5 +1,5 @@
 # todo-list-react by Patrycja Gomza
-![gif] (https://github.com/patrycja-gomza/todo-list-react/blob/main/public/gif/Animation%20todo-list.gif?raw=true)
+![gif](https://github.com/patrycja-gomza/todo-list-react/blob/main/public/gif/Animation%20todo-list.gif?raw=true)
 
 ## Demo
 https://patrycja-gomza.github.io/todo-list-react/
