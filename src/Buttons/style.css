@@ -14,7 +14,7 @@
     }
 }
 
-.buttons__item {
+.buttons__button {
     color: hsl(180, 100%, 25%);
     background-color: transparent;
     border: none;
@@ -22,20 +22,18 @@
     transition: 1s;
 }
 
-.buttons__item:hover {
+.buttons__button:hover {
     color: hsl(180, 100%, 30%);
 }
 
-.buttons__item:active {
+.buttons__button:active {
     color: hsl(180, 100%, 35%);
 }
 
-.buttons__item:disabled {
+.buttons__button:disabled {
     color: hsl(0, 0%, 80%);
-    ;
 }
 
-.buttons__item:disabled:hover {
+.buttons__button:disabled:hover {
     color: hsl(0, 0%, 80%);
-    ;
 }
