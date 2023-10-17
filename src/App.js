@@ -14,6 +14,10 @@ function App() {
   ]);
 
   useEffect(() => {
+    JSON.parse(localStorage.getItem("tasks"))
+  }, []);
+
+  useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
