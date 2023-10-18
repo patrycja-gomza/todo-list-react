@@ -8,14 +8,15 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "zrobić pranie", done: false },
-    { id: 2, content: "wypić kawę", done: true },
-  ]);
 
-  useEffect(() => {
-    JSON.parse(localStorage.getItem("tasks"))
-  }, []);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")
+      ||
+      [
+        { id: 1, content: "zrobić pranie", done: false },
+        { id: 2, content: "wypić kawę", done: true },
+      ]
+    ));
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
