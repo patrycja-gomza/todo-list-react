@@ -36,7 +36,7 @@ export const ListButton = styled.button`
     justify-content: center;
     transition: 1s;
 
-    ${({ toggleDone }) => toggleDone && css`
+    ${({ $toggleDone }) => $toggleDone && css`
         background-color: hsl(120, 100%, 25%);
 
         &:hover{
@@ -48,7 +48,7 @@ export const ListButton = styled.button`
         }
     `}
 
-    ${({ remove }) => remove && css`
+    ${({ $remove }) => $remove && css`
         background-color: hsl(0, 100%, 50%);
         font-weight: bold;
 
