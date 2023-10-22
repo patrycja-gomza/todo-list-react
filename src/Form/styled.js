@@ -1,25 +1,24 @@
-.form {
+import styled, { css } from "styled-components";
+
+export const StyledForm = styled.form`
     display: flex;
     flex-wrap: wrap;
     border: none;
-}
 
-
-@media (max-width: 768px) {
-    .form {
+    @media (max-width: 768px) {
         display: grid;
         grid-template-columns: 1fr;
     }
-}
+`;
 
-.form__field {
+export const FormInput = styled.input`
     flex-grow: 1;
     border: 1px solid lightgray;
     margin: 10px;
     padding: 10px;
-}
+`;
 
-.form__button {
+export const FormButton = styled.button`
     flex-basis: 200px;
     background-color: hsl(180, 100%, 25%);
     border: 1px solid hsl(180, 100%, 25%);
@@ -28,13 +27,13 @@
     margin: 10px;
     padding: 10px;
     transition: 1s;
-}
+    
+    &:hover{
+        background-color: hsl(180, 100%, 30%);
+        transform: scale(1.1);
+    }
 
-.form__button:hover {
-    background-color: hsl(180, 100%, 30%);
-    transform: scale(1.1);
-}
-
-.form__button:active {
-    background-color: hsl(180, 100%, 35%);
-}
+    &:active{
+            background-color: hsl(180, 100%, 35%);
+    }
+`;
