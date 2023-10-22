@@ -20,7 +20,7 @@ export const ListItem = styled.li`
 `;
 
 export const ListContent = styled.span`
-    ${({ done }) => done && css`
+    ${({ $done }) => $done && css`
         text-decoration: line-through;
     `}
 `;
