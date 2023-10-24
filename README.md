@@ -14,7 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Technologies
 Project is created with:
-- HTML / CSS / Java Script
+- JSX (JavaScript XML) 
 - Flexbox 
 - CSS Grid
 - JavaScript ES6+ Features
