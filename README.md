@@ -15,12 +15,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Technologies
 Project is created with:
 - HTML / CSS / Java Script
-- BEM convention
 - Flexbox 
 - CSS Grid
 - JavaScript ES6+ Features
-- React JS
+- React.js
 - Create React App (Webpack, Babel, ESLint, PostCSS, CSS Loader & Style Loader)
+- Controlled Components
+- Styled Components
+- Custom Hooks
+- Local Storage
 ## Status
 The site is dynamically growing, along with the new front-end programming skills I'm learning.
 ## Inspiration
