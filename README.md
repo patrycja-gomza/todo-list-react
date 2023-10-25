@@ -22,6 +22,8 @@ Project is created with:
 - Create React App (Webpack, Babel, ESLint, PostCSS, CSS Loader & Style Loader)
 - Controlled Components
 - Styled Components
+- Media Queries
+- Immutability (approach for managing state)
 - Custom Hooks
 - Local Storage
 ## Status
