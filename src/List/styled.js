@@ -35,29 +35,29 @@ export const ListButton = styled.button`
     align-items: center;
     justify-content: center;
     transition: 1s;
+`;
 
-    ${({ $toggleDone }) => $toggleDone && css`
-        background-color: hsl(120, 100%, 25%);
+export const ToggleDoneButton = styled(ListButton)`
+    background-color: hsl(120, 100%, 25%);
 
-        &:hover{
-            background-color: hsl(120, 100%, 30%);
-        }
+    &:hover {
+        background-color: hsl(120, 100%, 30%);
+    }
 
-        &:active{
-            background-color: hsl(120, 100%, 35%);
-        }
-    `}
+    &:active {
+        background-color: hsl(120, 100%, 35%);
+    }
+`;
 
-    ${({ $remove }) => $remove && css`
-        background-color: hsl(0, 100%, 50%);
-        font-weight: bold;
+export const RemoveButton = styled(ListButton)`
+    background-color: hsl(0, 100%, 50%);
+    font-weight: bold;
 
-        &:hover{
-            background-color: hsl(0, 100%, 60%);
-        }
+    &:hover {
+        background-color: hsl(0, 100%, 60%);
+    }
 
-        &:active{
-            background-color: hsl(0, 100%, 70%);
-        }
-    `}
+    &:active {
+        background-color: hsl(0, 100%, 70%);
+    }
 `;
