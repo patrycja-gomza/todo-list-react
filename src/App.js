@@ -3,16 +3,14 @@ import List from "./List";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import Container from "./Container";
+import { StyledContainer } from "./styled";
 import { useTasks } from "./useTasks.js";
 
 function App() {
-
-
   const { hideDone, toggleHideDone, tasks, removeTask, toggleTaskDone, setAllDone, addNewTask } = useTasks();
 
   return (
-    <Container>
+    <StyledContainer>
 
       <Header title="Lista zadań" />
 
@@ -41,7 +39,7 @@ function App() {
         }
       />
 
-    </Container>
+    </StyledContainer>
   );
 };
 
