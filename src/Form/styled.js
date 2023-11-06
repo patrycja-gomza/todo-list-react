@@ -1,11 +1,11 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const StyledForm = styled.form`
     display: flex;
     flex-wrap: wrap;
     border: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -13,15 +13,15 @@ export const StyledForm = styled.form`
 
 export const FormInput = styled.input`
     flex-grow: 1;
-    border: 1px solid lightgray;
+    border: 1px solid ${({ theme }) => theme.color.lightgrey};
     margin: 10px;
     padding: 10px;
 `;
 
 export const FormButton = styled.button`
     flex-basis: 200px;
-    background-color: hsl(180, 100%, 25%);
-    border: 1px solid hsl(180, 100%, 25%);
+    background-color: ${({ theme }) => theme.color.teal};
+    border: 1px solid ${({ theme }) => theme.color.teal};
     color: white;
     font-weight: 300;
     margin: 10px;
@@ -29,11 +29,11 @@ export const FormButton = styled.button`
     transition: 1s;
     
     &:hover{
-        background-color: hsl(180, 100%, 30%);
+        filter: brightness(120%);
         transform: scale(1.1);
     }
 
     &:active{
-            background-color: hsl(180, 100%, 35%);
+            filter: brightness(140%);
     }
 `;

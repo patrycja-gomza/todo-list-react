@@ -7,7 +7,7 @@ export const ButtonsContainer = styled.div`
     align-items: center;
     font-size: medium;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 20px;
@@ -15,25 +15,25 @@ export const ButtonsContainer = styled.div`
 `;
 
 export const Button = styled.button`
-    color: hsl(180, 100%, 25%);
+    color: ${({ theme }) => theme.color.teal};
     background-color: transparent;
     border: none;
     padding-left: 30px;
     transition: 0.5s;
 
     &:hover{
-        color: hsl(180, 100%, 30%);
+        filter: brightness(120%);
     }
 
     &:active{
-        color: hsl(180, 100%, 35%);
+        filter: brightness(140%);
     }
 
     &:disabled{
-        color: hsl(0, 0%, 80%);
+        color: ${({ theme }) => theme.color.silver};
 
         &:hover{
-            color: hsl(0, 0%, 80%);
+            color: ${({ theme }) => theme.color.silver};
         }
     }
 `;

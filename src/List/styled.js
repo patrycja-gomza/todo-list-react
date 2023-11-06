@@ -11,7 +11,7 @@ export const ListItem = styled.li`
     grid-template-columns: auto 1fr auto;
     grid-gap: 20px;
     align-items: center;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid ${({ theme }) => theme.color.lightgrey};
     padding: 10px;
 
     ${({ hidden }) => hidden && css`
@@ -38,26 +38,26 @@ export const ListButton = styled.button`
 `;
 
 export const ToggleDoneButton = styled(ListButton)`
-    background-color: hsl(120, 100%, 25%);
+    background-color: ${({ theme }) => theme.color.green};
 
     &:hover {
-        background-color: hsl(120, 100%, 30%);
+        filter: brightness(120%)
     }
 
     &:active {
-        background-color: hsl(120, 100%, 35%);
+        filter: brightness(140%);
     }
 `;
 
 export const RemoveButton = styled(ListButton)`
-    background-color: hsl(0, 100%, 50%);
+    background-color: ${({ theme }) => theme.color.crimson};
     font-weight: bold;
 
     &:hover {
-        background-color: hsl(0, 100%, 60%);
+        filter: brightness(120%);
     }
 
     &:active {
-        background-color: hsl(0, 100%, 70%);
+        filter: brightness(140%);
     }
 `;
