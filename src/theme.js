@@ -2,6 +2,7 @@ export const theme = {
     color: {
         teal: "#008080",
         silver: "#ccc",
+        alto: "#ddd",
         green: "#008000",
         crimson: "#dc143c",
         white: "#fff",
