@@ -10,7 +10,6 @@ import { selectTasks } from "./tasksSlice.js";
 
 function Tasks() {
   const {
-    removeTask,
     setAllDone,
   } = useTasks();
 
@@ -33,11 +32,7 @@ function Tasks() {
             setAllDone={setAllDone}
           />
         }
-        body={
-          <List
-            removeTask={removeTask}
-          />
-        }
+        body={<List />}
       />
 
     </StyledContainer>
