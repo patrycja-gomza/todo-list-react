@@ -1,12 +1,6 @@
 import { useState, useEffect } from "react";
 
 export const useTasks = () => {
-    const [hideDone, setHideDone] = useState(false);
-
-    const toggleHideDone = () => {
-        setHideDone(hideDone => !hideDone);
-    };
-
     const defaultTasks = [
         { id: 1, content: "zrobić pranie", done: false },
         { id: 2, content: "wypić kawę", done: true },
@@ -61,7 +55,7 @@ export const useTasks = () => {
         })
     };
 
-    return { hideDone, toggleHideDone, tasks, removeTask, toggleTaskDone, setAllDone, addNewTask };
+    return { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask };
 
 };
 
