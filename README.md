@@ -26,6 +26,7 @@ Project is created with:
 - Immutability (approach for managing state)
 - Custom Hooks
 - Local Storage
+- Redux
 ## Status
 The site is dynamically growing, along with the new front-end programming skills I'm learning.
 ## Inspiration
