@@ -18,13 +18,13 @@ const Form = () => {
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const trimmednewTaskContent = newTaskContent.trim();
-        if (trimmednewTaskContent === "") {
+        const trimmedNewTaskContent = newTaskContent.trim();
+        if (trimmedNewTaskContent === "") {
             return;
         };
 
         dispatch(addTask({
-            content: trimmednewTaskContent,
+            content: trimmedNewTaskContent,
             done: false,
             id: nanoid(),
         }));
