@@ -1,6 +1,12 @@
 import { useSelector, useDispatch } from "react-redux";
 import { ButtonsContainer, Button } from "./styled";
-import { selectTasksState, toggleHideDone, setAllDone, selectAreAllTasksDone } from "../tasksSlice";
+import {
+    selectTasksState,
+    toggleHideDone,
+    setAllDone,
+    selectAreAllTasksDone,
+    fetchExampleTasks
+} from "../tasksSlice";
 
 const Buttons = () => {
     const { tasks, hideDone } = useSelector(selectTasksState);
@@ -26,6 +32,9 @@ const Buttons = () => {
                 </>
             )
             }
+            <Button onClick={() => dispatch(fetchExampleTasks())}>
+                Pobierz przykładowe zadania
+            </Button>
         </ButtonsContainer >
     );
 }
