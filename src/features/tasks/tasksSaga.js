@@ -12,6 +12,6 @@ function* fetchExampleTasksHandler() {
     }
 };
 
-function* watchFetchExampleTasks() {
+export function* watchFetchExampleTasks() {
     yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
 };
