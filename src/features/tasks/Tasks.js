@@ -13,6 +13,7 @@ function Tasks() {
 
       <Section
         title="Dodaj nowe zadanie"
+        extraHeaderContent={<Buttons isFormSection />}
         body={<Form />}
       />
 
