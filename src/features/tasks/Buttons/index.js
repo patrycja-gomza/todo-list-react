@@ -5,11 +5,12 @@ import {
     toggleHideDone,
     setAllDone,
     selectAreAllTasksDone,
-    fetchExampleTasks
+    fetchExampleTasks,
+    setLoading
 } from "../tasksSlice";
 
 const Buttons = ({ isFormSection }) => {
-    const { tasks, hideDone } = useSelector(selectTasksState);
+    const { tasks, hideDone, loading } = useSelector(selectTasksState);
     const areAllTasksDone = useSelector(selectAreAllTasksDone);
     const dispatch = useDispatch();
 
@@ -35,8 +36,9 @@ const Buttons = ({ isFormSection }) => {
             {isFormSection && (
                 <Button
                     onClick={() => dispatch(fetchExampleTasks())}
+                    disabled={loading}
                 >
-                    Pobierz przykładowe zadania
+                    {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
                 </Button>
             )}
         </ButtonsContainer >
