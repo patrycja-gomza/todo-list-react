@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+/* import { useState, useEffect } from "react";
 
 export const useTasks = () => {
     const defaultTasks = [
@@ -60,3 +60,4 @@ export const useTasks = () => {
 };
 
 
+ */
