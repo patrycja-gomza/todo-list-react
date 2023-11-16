@@ -1,11 +1,11 @@
 import Form from "./Form/index.js";
 import List from "./List/index.js";
 import Buttons from "./Buttons/index.js";
-import Section from "../../common/Section/index.js";
-import Header from "../../common/Header/index.js";
-import { StyledContainer } from "../../common/styled.js";
+import Section from "../../../common/Section/index.js";
+import Header from "../../../common/Header/index.js";
+import { StyledContainer } from "../../../common/styled.js";
 
-function Tasks() {
+function TasksPage() {
   return (
     <StyledContainer>
 
@@ -27,4 +27,4 @@ function Tasks() {
   );
 };
 
-export default Tasks;
+export default TasksPage;

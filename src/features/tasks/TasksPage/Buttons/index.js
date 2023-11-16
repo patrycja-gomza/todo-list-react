@@ -6,7 +6,7 @@ import {
     setAllDone,
     selectAreAllTasksDone,
     fetchExampleTasks,
-} from "../tasksSlice";
+} from "../../tasksSlice";
 
 const Buttons = ({ isFormSection }) => {
     const { tasks, hideDone, loading } = useSelector(selectTasksState);
