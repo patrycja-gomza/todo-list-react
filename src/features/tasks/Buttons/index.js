@@ -6,7 +6,6 @@ import {
     setAllDone,
     selectAreAllTasksDone,
     fetchExampleTasks,
-    setLoading
 } from "../tasksSlice";
 
 const Buttons = ({ isFormSection }) => {
