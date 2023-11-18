@@ -11,13 +11,6 @@ export const StyledForm = styled.form`
     }
 `;
 
-export const FormInput = styled.input`
-    flex-grow: 1;
-    border: 1px solid ${({ theme }) => theme.color.lightgrey};
-    margin: 10px;
-    padding: 10px;
-`;
-
 export const FormButton = styled.button`
     flex-basis: 200px;
     background-color: ${({ theme }) => theme.color.teal};
