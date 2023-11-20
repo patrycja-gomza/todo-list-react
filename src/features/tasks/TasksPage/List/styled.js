@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const TasksList = styled.ul`
     list-style: none;
@@ -14,9 +15,14 @@ export const ListItem = styled.li`
     border-bottom: 1px solid ${({ theme }) => theme.color.lightgrey};
     padding: 10px;
 
-    ${({ hidden }) => hidden && css`
+   ${({ $hidden }) => $hidden && css`
         display: none;
     `};
+`;
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.color.teal};
 `;
 
 export const ListContent = styled.span`

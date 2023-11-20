@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Link, useLocation } from "react-router-dom";
-import { TasksList, ListItem, ListContent, ToggleDoneButton, RemoveButton } from "./styled";
+import { useLocation } from "react-router-dom";
+import { TasksList, ListItem, ListContent, ToggleDoneButton, RemoveButton, StyledLink } from "./styled";
 import { selectTasksByQuery, selectTasksState, toggleTaskDone, removeTask } from "../../tasksSlice";
 import searchQueryParamName from "../searchQueryParamName";
 
@@ -18,7 +18,7 @@ const List = () => {
             {tasks.map(task => (
                 <ListItem
                     key={task.id}
-                    hidden={task.done && hideDone}
+                    $hidden={task.done && hideDone}
                 >
                     <ToggleDoneButton
                         onClick={() => dispatch(toggleTaskDone(task.id))}
@@ -27,7 +27,7 @@ const List = () => {
                     </ToggleDoneButton>
 
                     <ListContent $done={task.done}>
-                        <Link to={`/zadania/${task.id}`}>{task.content}</Link>
+                        <StyledLink to={`/zadania/${task.id}`}>{task.content}</StyledLink>
                     </ListContent>
 
                     <RemoveButton
