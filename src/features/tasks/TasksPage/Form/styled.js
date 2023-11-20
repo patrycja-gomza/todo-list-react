@@ -20,6 +20,7 @@ export const FormButton = styled.button`
     margin: 10px;
     padding: 10px;
     transition: 1s;
+    cursor: pointer;
     
     &:hover{
         filter: brightness(120%);

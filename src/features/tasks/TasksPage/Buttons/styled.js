@@ -20,6 +20,7 @@ export const Button = styled.button`
     border: none;
     padding-left: 30px;
     transition: 0.5s;
+    cursor: pointer;
 
     &:hover{
         filter: brightness(120%);
@@ -32,5 +33,6 @@ export const Button = styled.button`
     &:disabled{
         color: ${({ theme }) => theme.color.silver};
         filter: none;
+        cursor: not-allowed;
     }
 `;

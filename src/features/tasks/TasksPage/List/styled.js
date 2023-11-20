@@ -35,6 +35,7 @@ export const ListButton = styled.button`
     align-items: center;
     justify-content: center;
     transition: 1s;
+    cursor: pointer;
 `;
 
 export const ToggleDoneButton = styled(ListButton)`
