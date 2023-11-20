@@ -15,7 +15,7 @@ export const ListItem = styled.li`
     padding: 10px;
 
     ${({ hidden }) => hidden && css`
-        display: none
+        display: none;
     `};
 `;
 
