@@ -10,7 +10,7 @@ const List = () => {
     const query = searchParams.get(searchQueryParamName);
 
     const tasks = useSelector(state => selectTasksByQuery(state, query));
-    const hideDone = useSelector(selectTasksState);
+    const { hideDone } = useSelector(selectTasksState);
     const dispatch = useDispatch();
 
     return (
