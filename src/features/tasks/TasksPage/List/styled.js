@@ -28,6 +28,7 @@ export const StyledLink = styled(Link)`
 export const ListContent = styled.span`
     ${({ $done }) => $done && css`
         text-decoration: line-through;
+        color: ${({ theme }) => theme.color.teal};
     `}
 `;
 
