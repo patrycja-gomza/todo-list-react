@@ -1,6 +1,6 @@
-import Section from "../../common/Section/index.js";
-import Header from "../../common/Header/index.js";
-import { StyledContainer } from "../../common/styled.js";
+import Section from "../../../common/Section/index.js";
+import Header from "../../../common/Header/index.js";
+import { StyledContainer } from "../../../common/styled.js";
 import { Chapter } from "./styled.js";
 
 function Author() {
