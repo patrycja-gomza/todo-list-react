@@ -1,32 +1,41 @@
 # todo-list-react by Patrycja Gomza
-![gif](https://github.com/patrycja-gomza/todo-list-react/blob/main/ReadmeAnimation.gif?raw=true)
+![gif](https://github.com/patrycja-gomza/todo-list-react/blob/main/ReadmeAnimation2.gif?raw=true)
 
 ## Demo
 https://patrycja-gomza.github.io/todo-list-react/
 ## General Info
-The subject of this page is a task list. In the center of the page is an application to create a task list, which contains two elements: 
-1. A form with a field for typing a task and an "Add Task" button.
-2. A task list dynamically created from the form with two options available: 
-- marking the task as completed and thereby crossing out its text
-- removing the task from the task list. 
+This page focuses on a task list application, featuring a central interface with four key elements:
+1. A button to download example tasks.
+2. A form with a field for entering tasks and an "Add Task" button.
+3. A search tool for tasks.
+4. A dynamically generated task list from the form, offering two options:
+- marking a task as completed, which crosses out its text
+- removing a task from the list.
+
+To view task details, simply click on the respective task text in the list.
+
+Beyond the task list, the application also includes an author page, providing insights into the creator.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Technologies
-Project is created with:
+This project incorporates a variety of technologies and tools, including but not limited to:
 - JSX (JavaScript XML) 
 - Flexbox 
 - CSS Grid
 - JavaScript ES6+ Features
 - React.js
 - Create React App (Webpack, Babel, ESLint, PostCSS, CSS Loader & Style Loader)
-- Controlled Components
-- Styled Components
+- Controlled components (controlled by state for a single source of truth in behavior)
+- Styled components (utilization of syntax with template literals)
 - Media Queries
-- Immutability (approach for managing state)
+- Immutability with the immer library in Redux (for state management)
 - Custom Hooks
-- Local Storage
-- Redux
+- Local Storage with Redux-Saga
+- Redux (utilizing actions, reducers, and middleware for asynchronous operations) 
+- React Router (including BrowserRouter, Route, Switch, and NavLink for navigation)
+- URL-related features like URLSearchParams, useLocation, useHistory: React Router and React Hooks for working with and manipulating the browser's URL
+- JavaScript generator functions (pause and resume functions), providing a mechanism for powerful asynchronous programming
 ## Status
 The site is dynamically growing, along with the new front-end programming skills I'm learning.
 ## Inspiration
