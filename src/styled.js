@@ -14,7 +14,10 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     text-decoration: none;
     color: ${({ theme }) => theme.color.white};
     margin-left: 30px;
-    }
+    };
+        &:hover{
+            text-decoration: underline;
+        };
 `;
 
 export const StyledNavList = styled.ul`
