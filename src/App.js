@@ -3,30 +3,31 @@ import TaskPage from "./features/tasks/TaskPage";
 import TasksPage from "./features/tasks/TasksPage/";
 import AuthorPage from "./features/author/AuthorPage";
 import { StyledNavLink, StyledNavList } from "./styled";
+import { toAuthor, toTask, toTasks } from "./routes";
 
 export default () => (
     <HashRouter>
         <nav>
             <StyledNavList>
                 <li>
-                    <StyledNavLink to="/zadania">Zadania</StyledNavLink>
+                    <StyledNavLink to={toTasks()}>Zadania</StyledNavLink>
                 </li>
                 <li>
-                    <StyledNavLink to="/autor">O autorze</StyledNavLink>
+                    <StyledNavLink to={toAuthor()}>O autorze</StyledNavLink>
                 </li>
             </StyledNavList>
             <Switch>
-                <Route path="/zadania/:id">
+                <Route path={toTask()}>
                     <TaskPage />
                 </Route>
-                <Route path="/zadania">
+                <Route path={toTasks()}>
                     <TasksPage />
                 </Route>
-                <Route path="/autor">
+                <Route path={toAuthor()}>
                     <AuthorPage />
                 </Route>
                 <Route path="/">
-                    <Redirect to="/zadania" />
+                    <Redirect to={toTasks()} />
                 </Route>
             </Switch>
         </nav>
